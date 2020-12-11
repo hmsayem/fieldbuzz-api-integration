@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+.login-form {
+    padding: 10% 30% 10%;
+}
+
+.info-form {
+    padding: 10% 20% 10%;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.success {
+    color: teal;
+    margin: 20%;
+    text-align: center;
+}
+
+.denied {
+    color: #ba2121;
+    margin: 20%;
+    text-align: center;
+}
+
+#file {
+    margin-top: 10px;
+}
+
+aside {
+    color: #ba2121;
+    margin-bottom: 10px;
+}
+
+select:invalid {
+    color: gray;
+}
+
+h1 {
+    color: #142850;
+    font-family: 'Baloo 2', cursive;
+}
