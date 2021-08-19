@@ -1,7 +1,7 @@
 from django import forms
-from .validators import validate_file
+from .validators import validate_file, validate_file_size
 
-choices = (('', 'Select Role'), ('backend', 'Backend'), ('phone', 'Phone'))
+choices = (('', 'Applying In'), ('backend', 'Backend'), ('mobile', 'Mobile'))
 
 
 class InfoForm(forms.Form):
@@ -13,7 +13,7 @@ class InfoForm(forms.Form):
     email = forms.EmailField(
         label='',
         max_length=256,
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Email'}),
+        widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'Email'}),
         required=True)
 
     phone = forms.CharField(
@@ -90,6 +90,6 @@ class InfoForm(forms.Form):
 
     file = forms.FileField(
         label='Upload your CV',
-        validators=[validate_file],
+        validators=[validate_file, validate_file_size],
         widget=forms.FileInput(attrs={'class': 'form-control', 'id': 'file'})
     )

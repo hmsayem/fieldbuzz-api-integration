@@ -1,26 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .login-form {
-    padding: 10% 30% 10%;
+    padding: 5% 35%;
 }
 
 .info-form {
-    padding: 10% 20% 10%;
+    padding: 5% 25%;
 }
 
 .form-group {
     margin-bottom: 10px;
 }
 
-.success {
+.response {
     color: teal;
-    margin: 20%;
-    text-align: center;
-}
-
-.denied {
-    color: #ba2121;
-    margin: 20%;
+    margin: 15%;
     text-align: center;
 }
 
@@ -40,4 +35,11 @@ select:invalid {
 h1 {
     color: #142850;
     font-family: 'Baloo 2', cursive;
+}
+
+.navbar-brand {
+    color: #086972 !important;
+    font-size: 1.7rem !important;
+
+    font-family: 'Roboto', sans-serif;
 }
